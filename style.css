@@ -5,6 +5,7 @@
 :root{
 --maincolor: plum;
 --accentcolor: purple;
+--fontcolor: #301934; 
 }
 
 body {
@@ -40,15 +41,15 @@ body {
 
 .header a:hover {
   background-color: white;
-  color: #301934;
-  }
+  color: var(--fontcolor);
+}
 
 .header-right {
     font-weight: bold;
     float: right;
 }
 
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
   .header a {
     float: none;
     display: block;
@@ -57,13 +58,13 @@ body {
   .header-right {
     float: none;
   }
-}
+} */
 
 .hero-banner {
   height: 300px;
   width: 100%;
   margin-bottom: 25px;
-  background-image: url(./Heather.png.jpg);
+  background-image: url(./Images/Heather.jpg.jpg);
   background-size: cover;
   background-color: var(--maincolor);
   background-position: center;
@@ -72,111 +73,94 @@ body {
 
 .hero-banner h1 {
   position: absolute;
+  text-align: center;
   top: 200px;
   left: 850px;
   height: 40px;
-  width: 350px;
+  width: 400px;
   background-color: var(--maincolor);
   border: 2px solid var(--accentcolor);
 }
 
 h2 {
-  padding-left: 10px;
-}
-
-#about h2 {
-  float: inline-start;
-  padding-right: 20px;
+  padding-left: 30px;
   font-size: 30px;
-  height:100px;
 }
 
+#firstheading{
+  float: left;
+  width: 17%;
+  display: inline;
+}
+
+#firstparagraph{
+  float: right;
+  width: 83%;
+  display: inline;
+}
 /* Make paragraph sit neatly */
 
-.flex-grid {
-  display: grid;
-  grid-template-rows: 50% 12% 12% 12% 12%;
-  grid-template-columns: 1fr 1fr;  
-  grid-template-areas:
-  "grid-item1 grid-item1"
-  "grid-item2 grid-item3"
-  "grid-item4 grid-item5"
-  "grid-item6 grid-item7"
-  "grid-item8 grid-item9"
-  ;
+#secondheading{
+  float: left;
+  width: 30%;
+  display: inline;
+  margin-top: 20px;
+}
+
+.flex-container {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:flex-end;
+  width: 1200px;
 }
     
-.grid-item1{
-  /* grid-column: 1/2; */
-  grid-area: grid-item1;
-  background-image: url(./Heather.png.jpg);
+#one{
+  height: 350px;
+  width: 1000px;
+  background-image: url(./Images/sky1.jpg);
+  border: var(--accentcolor) 5px solid;
 }
 
-.grid-item2{
-  grid-area: grid-item2;
-  background-image: url(./Heather.png.jpg);
+.grid-item{
+  height: 200px;
+  width: 493px;
+  background-image: url(./Images/sky2.jpg);
+  background-repeat: no-repeat;
+  background-color: var(--maincolor);
+  text-align:center;
+  font-weight: bold;
+  color: var(--accentcolor);
+  margin: 7px;
+  border: var(--accentcolor) 5px solid;
 }
 
-.grid-item3{
-  grid-area: grid-item3;
-  background-image: url(./Heather.png.jpg);
-}
 
-.grid-item4{
-  grid-area: grid-item4;
-  background-image: url(./Heather.png.jpg);
-}
-
-.grid-item5{
-  grid-area: grid-item5;
-  background-image: url(./Heather.png.jpg);
-}
-
-.grid-item6{
-  grid-area: grid-item6;
-  background-image: url(./Heather.png.jpg);
-}
-
-.grid-item7{
-  grid-area: grid-item7;
-  background-image: url(./Heather.png.jpg);
-}
-
-.grid-item8{
-  grid-area: grid-item8;
-  background-image: url(./Heather.png.jpg);
-}
-
-.grid-item9{
-  grid-area: grid-item9;
-  background-image: url(./Heather.png.jpg);
-}
-
-@media (max-width: 400px) {
-  .flex-grid {
-    display: block;
+/* @media (max-width: 400px) {
+  .flex-container {
+    flex-direction: column;
   }
-}
-
-
-
-
-
-
-#about{
-display: inline;
-
-}
-
+} */
 
 .page-section {
   color: var(--accentcolor);
 }
 
 .page-section p{
-color: black;
+  color: var(--fontcolor);
 }
 
-#contact {
+
+
+#contact ul{
 text-align: start;
+color: var(--fontcolor);
+}
+
+a{
+  color: var(--accentcolor);
+}
+
+a:hover{
+  color: var(--maincolor);
 }
