@@ -2,22 +2,27 @@
   box-sizing: border-box;
 }
 
+:root{
+--maincolor: plum;
+--accentcolor: purple;
+}
+
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0%;
+  padding: 0%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5;
 }
 
 .header {
   overflow: hidden;
-  background-color: purple;
+  background-color: var(--accentcolor);
   padding: 5px;
 }
 
 .header a{
   float: left;
-  color: plum;
+  color: var(--maincolor);
   text-align: center;
   text-decoration: none;
   padding: 12px;
@@ -29,13 +34,13 @@ body {
 .header a.logo {
   font-size: 25px;
   font-weight:lighter;
-  background-color: plum;
-  color: purple;
+  background-color: var(--maincolor);
+  color: var(--accentcolor);
 }
 
 .header a:hover {
-    background-color: white;
-    color: #301934;
+  background-color: white;
+  color: #301934;
   }
 
 .header-right {
@@ -54,32 +59,124 @@ body {
   }
 }
 
-.hero-banner{
+.hero-banner {
   height: 300px;
   width: 100%;
   margin-bottom: 25px;
-  background-image: url(https://placehold.co/600x400);
+  background-image: url(./Heather.png.jpg);
   background-size: cover;
-  background-color: plum;
+  background-color: var(--maincolor);
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.hero-banner h2{
-  position: relative;
+.hero-banner h1 {
+  position: absolute;
   top: 200px;
-  float: right;
+  left: 850px;
   height: 40px;
   width: 350px;
-  background-color: plum;
-  border: 2px solid purple;
+  background-color: var(--maincolor);
+  border: 2px solid var(--accentcolor);
 }
 
-h6 {
-  margin: 0;
+h2 {
+  padding-left: 10px;
+}
+
+#about h2 {
+  float: inline-start;
+  padding-right: 20px;
+  font-size: 30px;
+  height:100px;
+}
+
+/* Make paragraph sit neatly */
+
+.flex-grid {
+  display: grid;
+  grid-template-rows: 50% 12% 12% 12% 12%;
+  grid-template-columns: 1fr 1fr;  
+  grid-template-areas:
+  "grid-item1 grid-item1"
+  "grid-item2 grid-item3"
+  "grid-item4 grid-item5"
+  "grid-item6 grid-item7"
+  "grid-item8 grid-item9"
+  ;
+}
+    
+.grid-item1{
+  /* grid-column: 1/2; */
+  grid-area: grid-item1;
+  background-image: url(./Heather.png.jpg);
+}
+
+.grid-item2{
+  grid-area: grid-item2;
+  background-image: url(./Heather.png.jpg);
+}
+
+.grid-item3{
+  grid-area: grid-item3;
+  background-image: url(./Heather.png.jpg);
+}
+
+.grid-item4{
+  grid-area: grid-item4;
+  background-image: url(./Heather.png.jpg);
+}
+
+.grid-item5{
+  grid-area: grid-item5;
+  background-image: url(./Heather.png.jpg);
+}
+
+.grid-item6{
+  grid-area: grid-item6;
+  background-image: url(./Heather.png.jpg);
+}
+
+.grid-item7{
+  grid-area: grid-item7;
+  background-image: url(./Heather.png.jpg);
+}
+
+.grid-item8{
+  grid-area: grid-item8;
+  background-image: url(./Heather.png.jpg);
+}
+
+.grid-item9{
+  grid-area: grid-item9;
+  background-image: url(./Heather.png.jpg);
+}
+
+@media (max-width: 400px) {
+  .flex-grid {
+    display: block;
+  }
 }
 
 
-p {
-  margin: 0;
+
+
+
+
+#about{
+display: inline;
+
+}
+
+
+.page-section {
+  color: var(--accentcolor);
+}
+
+.page-section p{
+color: black;
+}
+
+#contact {
+text-align: start;
 }
