@@ -19,14 +19,16 @@ body {
 .header {
   overflow: hidden;
   background-color: var(--accentcolor);
-  padding: 5px;
+  padding: 5px; 
+  display: flex;
 }
 
 .header a{
-  float: left;
+  /* float: left; */
   color: var(--maincolor);
   text-align: center;
   text-decoration: none;
+  padding-top: 15px;
   padding: 12px;
   font-size: 18px;
   line-height: 25px;
@@ -44,11 +46,11 @@ body {
   background-color: white;
   color: var(--fontcolor);
 }
-
+/* 
 .header-right {
     font-weight: bold;
     float: right;
-}
+} */
 
 .hero-banner {
   height: 300px;
@@ -61,19 +63,24 @@ body {
   background-repeat: no-repeat;
   position: relative;
 }
+.page-wrapper{
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 h2 {
   padding-left: 20px;
   font-size: 37px;
 }
 
-#firstheading{
+/* #firstheading{
   float: left;
   width: 17%;
   display: inline;
-}
+} */
 
-#firstparagraph{
+/* #firstparagraph{
   font-size: 18px;
   float: right;
   width: 83%;
@@ -81,11 +88,22 @@ h2 {
   text-align: justify;
   padding: 0 1.5em;
   padding-bottom: 50px;
+} */
+#about{
+  display: flex;
+ justify-content: space-between;
+
+}
+#firstparagraph{
+
+  padding-left: 30px;
+  padding-bottom: 50px;
+  font-size: 18px;
+  color: var(--fontcolor);
 }
 
-
 #secondheading{
-  float: left;
+  /* float: left; */
   display: flex;
   align-items: flex-start;
 }
@@ -127,8 +145,7 @@ h2 {
 
 .page-section {
   color: var(--accentcolor);
-  height: fit-content;
-  width: fit-content;
+
 }
 
 .page-section p{
@@ -172,8 +189,14 @@ a:hover{
   h2 {
   margin-right: 14px;}
   #about{
-    display: flex;
+
     flex-direction: column;
+    align-items: center;
+    /* max-width: 100%; */
+  }
+  #work{
+    flex-direction: column;
+    align-items: center;
   }
   #one{
     height: 350px;
