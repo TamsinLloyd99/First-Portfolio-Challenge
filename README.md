@@ -12,3 +12,6 @@ Here are the critical requirements necessary to develop a portfolio that satisfi
 
 # Mock-up
 ![image](https://github.com/TamsinLloyd99/First-Portfolio-Challenge/assets/152029548/bf3734ad-7d4e-47a4-b3eb-0e7c29646416)
+
+# Image credits:
+- Guillaume Galtier @ unsplash
