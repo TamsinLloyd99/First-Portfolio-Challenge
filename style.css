@@ -34,7 +34,7 @@ body {
 }
 
 .header a.logo {
-  font-size: 25px;
+  font-size: 40px;
   font-weight:lighter;
   background-color: var(--maincolor);
   color: var(--accentcolor);
@@ -50,17 +50,6 @@ body {
     float: right;
 }
 
-/* @media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .header-right {
-    float: none;
-  }
-} */
-
 .hero-banner {
   height: 300px;
   width: 100%;
@@ -71,19 +60,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-}
-/* stays on side of page */
-.hero-banner h1 {
-  position: absolute;
-  text-align: center;
-  top: 200px;
-  left: 850px;
-  height: 40px;
-  width: 400px;
-  color: var(--maincolor);
-  background-color: var(--accentcolor);
-  border: 2px solid var(--maincolor);
-  border-radius: 4px;
 }
 
 h2 {
@@ -104,6 +80,7 @@ h2 {
   display: inline;
   text-align: justify;
   padding: 0 1.5em;
+  padding-bottom: 50px;
 }
 
 
@@ -118,12 +95,15 @@ h2 {
   
 }
 
-
 #one{
   height: 350px;
   width: 1000px;
   background-image: url(./Images/sky1.jpg);
 }
+
+/* .projects{
+  width: 493px;
+} */
 
 .grid-item{
   height: 200px;
@@ -143,11 +123,7 @@ h2 {
 .grid-item a:hover{
  color: rgb(103, 11, 103);
 }
-/* @media (max-width: 400px) {
-  .flex-container {
-    flex-direction: column;
-  }
-} */
+
 
 .page-section {
   color: var(--accentcolor);
@@ -191,3 +167,18 @@ a{
 a:hover{
   color: var(--maincolor);
 }
+
+@media (max-width: 640px) {
+  h2 {
+  margin-right: 14px;}
+  #about{
+    display: flex;
+    flex-direction: column;
+  }
+  #one{
+    height: 350px;
+    width: 480px;
+  }
+  .projects{
+    width: 493px;}
+  }
