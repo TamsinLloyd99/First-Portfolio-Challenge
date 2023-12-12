@@ -11,8 +11,9 @@
 body {
   margin: 0%;
   padding: 0%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
+  background-color: white
 }
 
 .header {
@@ -69,8 +70,9 @@ body {
   background-color: var(--maincolor);
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
 }
-
+/* stays on side of page */
 .hero-banner h1 {
   position: absolute;
   text-align: center;
@@ -78,13 +80,15 @@ body {
   left: 850px;
   height: 40px;
   width: 400px;
-  background-color: var(--maincolor);
-  border: 2px solid var(--accentcolor);
+  color: var(--maincolor);
+  background-color: var(--accentcolor);
+  border: 2px solid var(--maincolor);
+  border-radius: 4px;
 }
 
 h2 {
-  padding-left: 30px;
-  font-size: 30px;
+  padding-left: 20px;
+  font-size: 37px;
 }
 
 #firstheading{
@@ -94,32 +98,31 @@ h2 {
 }
 
 #firstparagraph{
+  font-size: 18px;
   float: right;
   width: 83%;
   display: inline;
+  text-align: justify;
+  padding: 0 1.5em;
 }
-/* Make paragraph sit neatly */
+
 
 #secondheading{
   float: left;
-  width: 30%;
-  display: inline;
-  margin-top: 20px;
+  display: flex;
+  align-items: flex-start;
 }
 
-.flex-container {
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:flex-end;
-  width: 1200px;
+#secondheading h2{
+  max-width: 100%;
+  
 }
-    
+
+
 #one{
   height: 350px;
   width: 1000px;
   background-image: url(./Images/sky1.jpg);
-  border: var(--accentcolor) 5px solid;
 }
 
 .grid-item{
@@ -133,9 +136,13 @@ h2 {
   color: var(--accentcolor);
   margin: 7px;
   border: var(--accentcolor) 5px solid;
+  font-size: 25px;
 }
 
 
+.grid-item a:hover{
+ color: rgb(103, 11, 103);
+}
 /* @media (max-width: 400px) {
   .flex-container {
     flex-direction: column;
@@ -144,13 +151,33 @@ h2 {
 
 .page-section {
   color: var(--accentcolor);
+  height: fit-content;
+  width: fit-content;
 }
 
 .page-section p{
   color: var(--fontcolor);
 }
 
+.flex-container {
+  margin-left: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end;
+  width: 100%;
+}
 
+.row{
+display: flex;
+
+}
+
+#work{
+  display: flex;
+  align-items: flex-start;
+  height: fit-content;
+  width: 100%;
+}
 
 #contact ul{
 text-align: start;
