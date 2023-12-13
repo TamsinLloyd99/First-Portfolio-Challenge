@@ -46,8 +46,8 @@ body {
   background-color: white;
   color: var(--fontcolor);
 }
-/* 
-.header-right {
+
+/* .header-right {
     font-weight: bold;
     float: right;
 } */
@@ -74,6 +74,9 @@ h2 {
   font-size: 37px;
 }
 
+#work h2{
+  padding-right: 40px;
+}
 /* #firstheading{
   float: left;
   width: 17%;
@@ -152,13 +155,13 @@ h2 {
   color: var(--fontcolor);
 }
 
-.flex-container {
+/* .flex-container {
   margin-left: 120px;
   display: flex;
   flex-direction: column;
   justify-content:flex-end;
   width: 100%;
-}
+} */
 
 .row{
 display: flex;
