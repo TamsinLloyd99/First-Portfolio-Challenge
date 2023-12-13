@@ -47,6 +47,11 @@ body {
   color: var(--fontcolor);
 }
 
+.hero-banner img{
+  width: 200pxx;
+  height: 200px;
+  border: 2px solid white;
+  }
 /* .header-right {
     font-weight: bold;
     float: right;
@@ -95,8 +100,8 @@ h2 {
 #about{
   display: flex;
  justify-content: space-between;
-
 }
+  
 #firstparagraph{
 
   padding-left: 30px;
